@@ -1,16 +1,4 @@
-/*!
-=========================================================
-* Steller Landing page
-=========================================================
 
-* Copyright: 2019 DevCRUD (https://devcrud.com)
-* Licensed: (https://devcrud.com/licenses)
-* Coded by www.devcrud.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
 :root {
   --blue: #79A9F5;
   --indigo: #C45F90;
@@ -11546,18 +11534,45 @@ pre {
 }
 
 @media (max-width: 991.98px) {
+  .header{
+    height:100px;
+  }
   .header .container {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center;
+        align-items:end;
+        justify-content:left;
+        width: 100%;
+        height:80%;
+  }
+  .header .container .infos .title{
+    font-size: 40px;
   }
   .header .container .infos {
-    margin-top: 0;
+    margin-top: 10px;
   }
   .header .container .img-holder {
     display: none;
   }
+}
+
+
+@media (max-width: 991.98px) {
+ #id .container{
+  width: 100vw;
+}
+.icn {
+  justify-content: center;
+  align-items: center;
+  --bg: #2f2f2f;
+  --clr: #fff;
+  position: relative;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
 }
 
 .header .widget {
@@ -11597,12 +11612,6 @@ pre {
 .header .widget .widget-item h2, .header .widget .widget-item p {
   margin: 0;
 }
-
-.header .widget .widget-item p {
-  opacity: .7;
-  font-size: 14px;
-}
-
 @media (max-width: 767.98px) {
   .header .widget {
     padding: 10px;
@@ -12204,6 +12213,6 @@ pre {
           transform: translateY(0);
       }
       50% {
-          transform: translateY(-20px); /* Adjust the distance as needed */
+          transform: translateY(-20px); 
       }
   }
