@@ -11062,6 +11062,7 @@ pre {
 }
 
 .img-wrapper {
+  aspect-ratio:2/1;
   position: relative;
   border-radius: 0.25rem;
   overflow: hidden;
